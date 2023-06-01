@@ -88,11 +88,11 @@ Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and loa
 
 2. Rewind
 
-3. Decimation - 
-Explanation Needed
+3. Decimation
 
-4. Jump File - 
-Explanation Needed
+
+4. Jump File
+
 
 5. Frame Features - 
 Explanation Needed - Zoom In/Out, Capture, x,y,color of current pixel
