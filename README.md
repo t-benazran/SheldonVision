@@ -28,7 +28,7 @@
         <li><a href="#tests">Tests</a></li>
       </ul>
     </li>
-    <li><a href="#sw-diagram">Software Diagram</a></li>
+    <li><a href="#software-diagram">Software Diagram</a></li>
     <li><a href="#The-Algorithm-Server">The Algorithm Server</a></li>
     <li><a href="#UML">UML</a></li>
     <li><a href="#User-Stories-Video">User Stories Video</a></li>
