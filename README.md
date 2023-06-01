@@ -97,6 +97,7 @@ Explanation Needed
 5. Frame Features - 
 Explanation Needed - Zoom In/Out, Capture, x,y,color of current pixel
 
+![image](https://github.com/t-benazran/SheldonVision/assets/72923818/b62086dc-3f8d-4940-8896-0811fd892099)
 
 ## High Level Requirements
 ### SheldonVisionUI
