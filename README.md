@@ -76,20 +76,20 @@ git clone https://github.com/t-benazran/SheldonVision.git
 2. Scroll down the page and choose the desired video to load
 
 ### Features
-## Bounding Box Metadata
+#### Bounding Box Metadata
 Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and load the ``` presence_log.json ```
 
-## Play
+#### Play
 
-## Rewind
+#### Rewind
 
-## Decimation
+#### Decimation
 Explanation Needed
 
-## Jump File
+#### Jump File
 Explanation Needed
 
-## Frame Features
+#### Frame Features
 Explanation Needed - Zoom In/Out, Capture, x,y,color of current pixel
 
 
