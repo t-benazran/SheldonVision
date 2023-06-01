@@ -6,7 +6,7 @@
       <a href="#SheldonVision">SheldonVision</a>
     </li>
     <li>
-      <a href="##Project Scope">Project Scope</a>
+      <a href="##ProjectScope">Project Scope</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
