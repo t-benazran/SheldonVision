@@ -10,7 +10,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#dependencies">Dependencies</a></li>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installing">installing</a></li>
       </ul>
     </li>
     
