@@ -6,7 +6,7 @@
       <a href="#SheldonVision">SheldonVision</a>
     </li>
     <li>
-      <a href="##ProjectScope">Project Scope</a>
+      <a href="##Project-Scope">Project Scope</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -21,7 +21,7 @@
   </ol>
 </details>
 
-
+<!-- SheldonVision -->
 # SheldonVision
 
 The SheldonVision project was developed in response to the needs of the Data Science team at my workplace, who required a user-friendly debugging tool for their algorithms. Its primary objective is to facilitate frame navigation, enhance algorithm accuracy through the analysis of specific frames, and incorporate additional layers of metadata. The intended beneficiaries of this project are data scientists, who can leverage its capabilities to improve their work.
@@ -30,7 +30,7 @@ The SheldonVision project was developed in response to the needs of the Data Sci
 
 
 
-## Project Scope
+## Project-Scope
 
 The project scope entails the development of a user-friendly web UI interface, specifically designed for data scientists to effortlessly load their videos and facilitate easy debugging. The backend functionality will be responsible for retrieving the requested frames and addressing user queries, but this process will remain transparent to the user. Key features of the interface include the ability to navigate to the next or previous frames, implement decimation techniques, switch between video files, and incorporate additional functionalities as needed. The primary goal is to provide data scientists with a seamless and efficient platform for video analysis and algorithm debugging.
 
