@@ -35,7 +35,7 @@ git clone https://github.com/t-benazran/SheldonVision.git
 7. Copy the ``` results/Experiments/WOALOLTestSetP0 ``` folder to ``` C:\ ```
 
 ### How To Use
-1. Click the ``` Video ``` button and load the sample video from ``` C:\results/Experiments/WOALOLTestSetP0 ```
+1. Click the ``` Video ``` button and load the sample video from ``` C:\results\Experiments\WOALOLTestSetP0 ```
 2. Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and load the ``` presence_log.json ```
 3. Click the ``` Play ``` button
 
