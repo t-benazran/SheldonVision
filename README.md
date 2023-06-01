@@ -13,7 +13,13 @@
         <li><a href="#installing">Install</a></li>
       </ul>
     </li>
-    <li><a href="#how-to-use">How to use:</a></li>
+    <li><a href="#how-to-use">How to use:</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#installing">Install</a></li>
+      </ul>
+    </li>
     <li><a href="#The-API">The API</a></li>
     <li><a href="#The-Client-Side">The Client Side</a></li>
     <li><a href="#The-Algorithm-Server">The Algorithm Server</a></li>
