@@ -30,6 +30,7 @@
     </li>
     <li><a href="#software-diagram">Software Diagram</a></li>
     <li><a href="#sigmund">Sigmund</a></li>
+    <li><a href="#link-to-jira-roadmap">Link to JIRA roadmap</a></li>
   </ol>
 </details>
 
@@ -132,4 +133,8 @@ Each Sigmund Plugin as independent component communicate with each other on top 
 Plugin A sends 'a' messages and doesn’t subscribe to any message.
 Plugin B sends 'b' and 'x' messages and subscribes to 'a' messages.
 Plugin C sends 'c' messages and subscribed to 'a' and 'b' messages. |
+
+## Link to JIRA roadmap
+https://talklein125.atlassian.net/jira/software/projects/FP/boards/1/roadmap
+
 
