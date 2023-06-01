@@ -1,0 +1,21 @@
+2023-05-21 20:56:26.0781|INFO|CameraPlugin|SetLoggerAsync|line 886: Starting CameraPlugin 1.786.137.0
+2023-05-21 20:56:26.0781|INFO|CameraPlugin|LogAllUserOptions|line 1126: Plugin CameraPlugin 1.786.137.0 options: PauseMode: False, FrameHeight: 480, IsShowDebugWindow: False, KeepAlivePort: 2468, FrameWidth: 640, InputNameChange: , RegistrationAckTimeout: 1, SubPort: 1234, PluginsToCloseAfter: , OutputNameChange: , IpAddress: 127.0.0.1, InputTypes: , Master: False, OutputTypes: , ResizeImage: True, PluginName: CameraPlugin, RegistrationRetries: 6, PubPort: 5678, Passthrough: , WaitingMode: True, IsDisableAutoFocus: False, DisableTelemetry: False, MasterNumOfFramesToReq: 30
+2023-05-21 20:56:26.0781|INFO|CameraPlugin|OnInit|line 120: Waiting for LoadRequest message
+2023-05-21 20:56:26.0781|INFO|CameraPlugin|Start|line 109: CameraPlugin init Done!
+2023-05-21 20:56:26.6105|INFO|AzureBlobPlugin|SetLoggerAsync|line 886: Starting AzureBlobPlugin 1.0.0.0
+2023-05-21 20:56:26.6425|INFO|AzureBlobPlugin|LogAllUserOptions|line 1126: Plugin AzureBlobPlugin 1.0.0.0 options: sas: sp=racwdli&st=2023-05-10T09:01:07Z&se=2025-10-11T17:01:07Z&sv=2022-11-02&sr=c&sig=IImnSh3I8yKU%2Fu0Nr%2B3CUgEAafoDUy1MMbVQK9EtwKs%3D, KeepAlivePort: 2468, OutputTypes: , DisableTelemetry: False, OutputNameChange: , Passthrough: , PluginsToCloseAfter: , MasterNumOfFramesToReq: 30, RegistrationRetries: 6, NumOfUploadTaskParallel: 2, IpAddress: 127.0.0.1, RegistrationAckTimeout: 1, Master: False, SubPort: 1234, NumOfDownloadTaskParallel: 2, InputNameChange: , InputTypes: , PluginName: AzureBlobPlugin, PubPort: 5678, storageAccount: presencecv0851576016, container: dev-data
+2023-05-21 20:56:26.7195|INFO|AzureBlobPlugin|Start|line 109: AzureBlobPlugin init Done!
+2023-05-21 20:57:00.1135|INFO|AzureBlobPlugin|DownloadFile|line 256: Start Download file results/b54161a7-64e9-4f28-b9dd-79c365df7729\Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01\presence_log.json
+2023-05-21 20:57:01.1619|INFO|AzureBlobPlugin|DownloadFile|line 259: Finish Download file results/b54161a7-64e9-4f28-b9dd-79c365df7729\Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01\presence_log.json
+2023-05-21 20:57:01.1993|INFO|AzureBlobPlugin|DownloadFile|line 256: Start Download file annotations/GT_logs/Latest/Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01.json
+2023-05-21 20:57:01.8481|INFO|AzureBlobPlugin|DownloadFile|line 259: Finish Download file annotations/GT_logs/Latest/Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01.json
+2023-05-21 20:57:02.0509|INFO|CameraPlugin|PluginLogic|line 166: PlayerStop message received
+2023-05-21 20:57:02.4828|INFO|CameraPlugin|PluginLogic|line 187: LoadRequest message received
+2023-05-21 20:57:02.4828|INFO|CameraPlugin|GetVideoCapture|line 39: Loading video File C:\results\Experiments\WOALOLTestSetP0\ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01.mp4
+2023-05-21 20:57:03.9368|INFO|CameraPlugin|PluginLogic|line 153: GetTotalVideoFrames message received
+2023-05-21 20:57:03.9368|INFO|CameraPlugin|Log|line 154: Start reading from video stream
+2023-05-21 20:57:03.9368|INFO|CameraPlugin|PluginLogic|line 213: Running with FPS 11
+2023-05-21 20:57:04.4837|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 480 message received
+2023-05-21 20:57:04.7824|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 20:57:04.9489|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 479 message received
+2023-05-21 20:57:05.1127|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received

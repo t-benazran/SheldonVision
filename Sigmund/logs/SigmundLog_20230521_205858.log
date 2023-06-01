@@ -1,0 +1,175 @@
+2023-05-21 20:58:58.5118|INFO|CameraPlugin|SetLoggerAsync|line 886: Starting CameraPlugin 1.786.137.0
+2023-05-21 20:58:58.5157|INFO|CameraPlugin|LogAllUserOptions|line 1126: Plugin CameraPlugin 1.786.137.0 options: IsShowDebugWindow: False, PluginName: CameraPlugin, Passthrough: , InputNameChange: , OutputNameChange: , DisableTelemetry: False, PubPort: 5678, MasterNumOfFramesToReq: 30, OutputTypes: , Master: False, FrameWidth: 640, ResizeImage: True, IpAddress: 127.0.0.1, IsDisableAutoFocus: False, InputTypes: , SubPort: 1234, PluginsToCloseAfter: , PauseMode: False, KeepAlivePort: 2468, RegistrationAckTimeout: 1, WaitingMode: True, RegistrationRetries: 6, FrameHeight: 480
+2023-05-21 20:58:58.5699|INFO|CameraPlugin|OnInit|line 120: Waiting for LoadRequest message
+2023-05-21 20:58:58.5699|INFO|CameraPlugin|Start|line 109: CameraPlugin init Done!
+2023-05-21 20:58:59.0664|INFO|AzureBlobPlugin|SetLoggerAsync|line 886: Starting AzureBlobPlugin 1.0.0.0
+2023-05-21 20:58:59.0664|INFO|AzureBlobPlugin|LogAllUserOptions|line 1126: Plugin AzureBlobPlugin 1.0.0.0 options: SubPort: 1234, PluginsToCloseAfter: , PluginName: AzureBlobPlugin, Master: False, RegistrationAckTimeout: 1, InputTypes: , sas: sp=racwdli&st=2023-05-10T09:01:07Z&se=2025-10-11T17:01:07Z&sv=2022-11-02&sr=c&sig=IImnSh3I8yKU%2Fu0Nr%2B3CUgEAafoDUy1MMbVQK9EtwKs%3D, KeepAlivePort: 2468, InputNameChange: , storageAccount: presencecv0851576016, Passthrough: , NumOfUploadTaskParallel: 2, OutputNameChange: , IpAddress: 127.0.0.1, container: dev-data, RegistrationRetries: 6, PubPort: 5678, NumOfDownloadTaskParallel: 2, DisableTelemetry: False, MasterNumOfFramesToReq: 30, OutputTypes: 
+2023-05-21 20:58:59.1137|INFO|AzureBlobPlugin|Start|line 109: AzureBlobPlugin init Done!
+2023-05-21 20:59:38.4510|INFO|CameraPlugin|PluginLogic|line 166: PlayerStop message received
+2023-05-21 20:59:38.4677|INFO|CameraPlugin|PluginLogic|line 187: LoadRequest message received
+2023-05-21 20:59:38.4677|INFO|CameraPlugin|GetVideoCapture|line 39: Loading video File C:/results/Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01.mp4
+2023-05-21 20:59:38.9411|INFO|CameraPlugin|PluginLogic|line 153: GetTotalVideoFrames message received
+2023-05-21 20:59:38.9411|INFO|CameraPlugin|Log|line 154: Start reading from video stream
+2023-05-21 20:59:38.9411|INFO|CameraPlugin|PluginLogic|line 213: Running with FPS 11
+2023-05-21 20:59:38.9411|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 20:59:39.3399|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 0 message received
+2023-05-21 20:59:39.3399|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 20:59:56.3252|INFO|CameraPlugin|PluginLogic|line 149: PlayerPlay message received
+2023-05-21 21:00:03.0277|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:00:03.1489|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 74 message received
+2023-05-21 21:00:04.0722|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:04.2212|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:00:04.3298|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:00:04.7219|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 76 message received
+2023-05-21 21:00:05.9961|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:06.3328|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 80 message received
+2023-05-21 21:00:06.8311|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:07.1671|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 83 message received
+2023-05-21 21:00:07.5423|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:07.7612|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 87 message received
+2023-05-21 21:00:08.8087|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:09.1123|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 91 message received
+2023-05-21 21:00:09.9871|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:10.1959|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 94 message received
+2023-05-21 21:00:11.1135|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:11.4154|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 98 message received
+2023-05-21 21:00:12.3083|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:12.5712|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 102 message received
+2023-05-21 21:00:13.5904|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:13.8128|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 105 message received
+2023-05-21 21:00:14.9530|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:15.1003|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 109 message received
+2023-05-21 21:00:15.8801|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:16.2739|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 113 message received
+2023-05-21 21:00:16.8019|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:17.1575|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 116 message received
+2023-05-21 21:00:17.6686|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:17.9655|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 120 message received
+2023-05-21 21:00:18.6968|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:18.9674|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 124 message received
+2023-05-21 21:00:20.2266|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:20.3405|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 127 message received
+2023-05-21 21:00:21.3220|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:21.5201|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 131 message received
+2023-05-21 21:00:22.7915|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:22.9449|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 135 message received
+2023-05-21 21:00:24.8225|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:25.0943|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 138 message received
+2023-05-21 21:00:25.7312|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:26.0013|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 142 message received
+2023-05-21 21:00:26.9330|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:27.1153|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 146 message received
+2023-05-21 21:00:28.3686|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:28.5864|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 149 message received
+2023-05-21 21:00:29.7711|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:30.1959|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 153 message received
+2023-05-21 21:00:31.6840|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:31.9352|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 157 message received
+2023-05-21 21:00:33.4889|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:33.5140|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:00:33.5158|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:00:34.1812|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 153 message received
+2023-05-21 21:00:35.4168|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:35.4973|INFO|CameraPlugin|PluginLogic|line 149: PlayerPlay message received
+2023-05-21 21:00:37.5340|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:00:37.6688|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:00:39.7456|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 171 message received
+2023-05-21 21:00:40.4563|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:40.7593|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 175 message received
+2023-05-21 21:00:41.6311|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:41.8318|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 179 message received
+2023-05-21 21:00:42.5479|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:42.8930|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 182 message received
+2023-05-21 21:00:43.8307|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:44.1259|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 186 message received
+2023-05-21 21:00:45.1926|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:45.5511|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 190 message received
+2023-05-21 21:00:46.5484|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:47.0227|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 193 message received
+2023-05-21 21:00:48.2025|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:48.4041|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 197 message received
+2023-05-21 21:00:49.0755|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:49.4076|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 201 message received
+2023-05-21 21:00:50.1033|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:50.2387|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 204 message received
+2023-05-21 21:00:51.1326|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:51.3128|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 208 message received
+2023-05-21 21:00:52.3502|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:53.1587|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 212 message received
+2023-05-21 21:00:54.4881|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:54.7895|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 215 message received
+2023-05-21 21:00:55.8129|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:56.0280|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 219 message received
+2023-05-21 21:00:57.5284|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:57.8727|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 223 message received
+2023-05-21 21:00:58.9423|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:00:59.1322|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 226 message received
+2023-05-21 21:01:00.5548|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:00.8657|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 230 message received
+2023-05-21 21:01:01.8550|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:02.1515|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 234 message received
+2023-05-21 21:01:03.0383|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:03.3682|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:03.3682|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:14.8206|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 237 message received
+2023-05-21 21:01:15.3080|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:15.5548|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 241 message received
+2023-05-21 21:01:16.8708|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:17.1037|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 245 message received
+2023-05-21 21:01:18.1359|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:18.3894|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 248 message received
+2023-05-21 21:01:19.5881|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:19.6178|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:19.6178|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:25.6171|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 248 message received
+2023-05-21 21:01:26.3979|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:26.6602|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 252 message received
+2023-05-21 21:01:27.6919|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:27.8778|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 256 message received
+2023-05-21 21:01:28.7302|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:28.9448|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 259 message received
+2023-05-21 21:01:29.3701|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:29.5550|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:29.8025|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 263 message received
+2023-05-21 21:01:30.7303|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:30.8511|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:30.8511|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:30.9868|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 259 message received
+2023-05-21 21:01:31.3660|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:40.1501|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 263 message received
+2023-05-21 21:01:40.5033|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:40.7461|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 267 message received
+2023-05-21 21:01:41.5131|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:41.6745|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 270 message received
+2023-05-21 21:01:42.3743|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:42.5986|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 274 message received
+2023-05-21 21:01:43.5109|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:43.7151|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 278 message received
+2023-05-21 21:01:44.6926|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:45.0841|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 281 message received
+2023-05-21 21:01:46.1951|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:46.4662|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 285 message received
+2023-05-21 21:01:47.8369|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:48.0078|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 289 message received
+2023-05-21 21:01:48.5762|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:48.8431|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 292 message received
+2023-05-21 21:01:49.4409|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:01:49.7525|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:01:49.7525|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:02:17.5968|INFO|AzureBlobPlugin|DownloadFile|line 256: Start Download file results/b54161a7-64e9-4f28-b9dd-79c365df7729\Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01\presence_log.json
+2023-05-21 21:02:19.1581|INFO|AzureBlobPlugin|DownloadFile|line 259: Finish Download file results/b54161a7-64e9-4f28-b9dd-79c365df7729\Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01\presence_log.json
+2023-05-21 21:02:19.2044|INFO|AzureBlobPlugin|DownloadFile|line 256: Start Download file annotations/GT_logs/Latest/Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01.json
+2023-05-21 21:02:19.9973|INFO|AzureBlobPlugin|DownloadFile|line 259: Finish Download file annotations/GT_logs/Latest/Experiments/WOALOLTestSetP0/ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01.json
+2023-05-21 21:02:20.2622|INFO|CameraPlugin|PluginLogic|line 166: PlayerStop message received
+2023-05-21 21:02:20.3629|INFO|CameraPlugin|PluginLogic|line 187: LoadRequest message received
+2023-05-21 21:02:20.3629|INFO|CameraPlugin|GetVideoCapture|line 39: Loading video File C:\results\Experiments\WOALOLTestSetP0\ApproachLeave_2c311_User90_EmptyStaticBackground_Lighted_Cloudy_110_2023-01-09_14-28-01.mp4
+2023-05-21 21:02:20.7819|INFO|CameraPlugin|Log|line 154: Start reading from video stream
+2023-05-21 21:02:20.7819|INFO|CameraPlugin|PluginLogic|line 153: GetTotalVideoFrames message received
+2023-05-21 21:02:20.7819|INFO|CameraPlugin|PluginLogic|line 213: Running with FPS 11
+2023-05-21 21:02:21.3108|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 400 message received
+2023-05-21 21:02:22.9987|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:02:23.0391|INFO|CameraPlugin|PluginLogic|line 183: PlayerSetFrame to frame 399 message received
+2023-05-21 21:02:24.1608|INFO|CameraPlugin|PluginLogic|line 204: GetCurrentFrame message received
+2023-05-21 21:02:28.3140|INFO|CameraPlugin|PluginLogic|line 149: PlayerPlay message received
+2023-05-21 21:02:43.7032|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received
+2023-05-21 21:02:43.7945|INFO|CameraPlugin|PluginLogic|line 178: PlayerPause message received

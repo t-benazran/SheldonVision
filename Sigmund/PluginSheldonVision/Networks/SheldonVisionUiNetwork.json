@@ -1,0 +1,59 @@
+{
+  "Aliases": {
+    "SIGMUND_FOLDER": ".",
+    "SHELDON_VISION_PATH": "PluginSheldonVision",
+    "PYTHON": "C:\\Tools\\SheldonVisionVenv\\Scripts\\python.exe",
+    "VISIBLE": "false",
+    "STORAGEACCOUNTNAME": "presencecv0851576016",
+    "CONTAINERNAME": "dev-data",
+    "SASTOKEN": "sp=racwdli&st=2023-05-10T09:01:07Z&se=2025-10-11T17:01:07Z&sv=2022-11-02&sr=c&sig=IImnSh3I8yKU%2Fu0Nr%2B3CUgEAafoDUy1MMbVQK9EtwKs%3D",
+    "NUMOFUPLOADTASKS": "2",
+    "NUMOFDOWNLOADTASKS": "2",
+    "HEIGHT": "480",
+    "WIDTH": "640"
+  },
+
+  "Launchables": {
+
+    "CameraPlugin Plugin": {
+      "type": "PluginExe",
+      "exe": "$SIGMUND_FOLDER$\\CameraListenerPlugin.exe",
+      "arguments": "--waitingMode --resizeImage --height $HEIGHT$ --width $WIDTH$",
+      "delay": 0,
+      "visible": "$VISIBLE$",
+      "enabled": true,
+      "manual": false,
+      "WaitForConnection": true,
+      "pluginName": "CameraPlugin"
+    },
+
+    "Azure Blob Storage Plugin": {
+      "type": "PluginExe",
+      "exe": "$SIGMUND_FOLDER$\\Plugin.AzureBlobStorage.exe",
+      "arguments": "--storageAccountName $STORAGEACCOUNTNAME$ --containerName $CONTAINERNAME$ --SasToken $SASTOKEN$ --NumOfUploadTaskParallel $NUMOFUPLOADTASKS$ --NumOfDownloadTaskParallel $NUMOFDOWNLOADTASKS$",
+      "delay": 0,
+      "visible": "$VISIBLE$",
+      "enabled": true,
+      "manual": false,
+      "blocking": false,
+      "WaitForConnection": true,
+      "pluginName": "AzureBlobPlugin",
+      "inputTypes": ""
+    },
+	
+	"Sheldon Vision Plugin": {
+      "type": "PluginPy",
+      "py": "$SIGMUND_FOLDER$\\PluginSheldonVision\\PluginSheldonVisionUi.py",
+      "interpreter": "$PYTHON$",
+      "arguments": "--storage_account_name $STORAGEACCOUNTNAME$ --container_name $CONTAINERNAME$",
+      "delay": 0,
+      "visible": "$VISIBLE$",
+      "enabled": true,
+      "manual": false,
+      "blocking": false,
+      "WaitForConnection": true,
+      "pluginName": "SheldonVisionUiPlugin",
+      "inputTypes": ""
+    }
+  }
+}

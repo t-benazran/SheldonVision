@@ -1,0 +1,30 @@
+2023-05-21 20:49:35.3912|INFO|Sigmund|SetLoggerAsync|line 886: Starting Sigmund 
+2023-05-21 20:49:35.4852|INFO|Sigmund|BeforeInit|line 91: Going to check if firewall rules are valid
+2023-05-21 20:49:35.4852|INFO|Starting Sigmund proxy, IP: 10.60.248.195
+2023-05-21 20:49:35.6617|INFO|Sigmund|LogAllUserOptions|line 1126: Plugin Sigmund 1.786.137.0 options: InputTypes: , Master: False, MasterNumOfFramesToReq: 0, PluginsToCloseAfter: , PluginName: Sigmund, KeepAlivePort: 2468, DisableTelemetry: False, PubPort: 5678, RegistrationRetries: 0, SubPort: 1234, RegistrationAckTimeout: 0, OutputTypes: 
+2023-05-21 20:49:41.3740|INFO|Sigmund|OnInit|line 119: Sigmund network initialize sequence begin
+2023-05-21 20:49:41.3740|INFO|Sigmund|Start|line 109: Sigmund init Done!
+2023-05-21 20:49:41.3740|INFO|Sigmund|RunProcess|line 55: Routing file path: C:\Tools\Sigmund\PluginSheldonVision\Networks\SheldonVisionUiNetwork.json
+2023-05-21 20:49:41.9022|INFO|Sigmund|LaunchStartedEventCalled|line 127: Launch CameraPlugin Plugin Starting
+2023-05-21 20:49:42.6057|INFO|Sigmund|RegisterPluginToNetwork|line 89: New plugin name CameraPlugin added to network.
+2023-05-21 20:49:42.6222|INFO|Sigmund|LaunchStartedEventCalled|line 127: Launch Azure Blob Storage Plugin Starting
+2023-05-21 20:49:43.2784|INFO|Sigmund|RegisterPluginToNetwork|line 89: New plugin name AzureBlobPlugin added to network.
+2023-05-21 20:49:43.2975|INFO|Sigmund|LaunchStartedEventCalled|line 127: Launch Sheldon Vision Plugin Starting
+2023-05-21 20:49:54.2187|INFO|Sigmund|RegisterPluginToNetwork|line 89: New plugin name SheldonVisionUiPlugin added to network.
+2023-05-21 20:49:54.2570|INFO|Sigmund|LaunchDoneEventCalled|line 119: Launch Done
+2023-05-21 20:49:57.9623|INFO|Sigmund|Stop|line 142: Starting Stop
+2023-05-21 20:49:57.9658|INFO|Sigmund|AbortProcess|line 86: AbortProcess called
+2023-05-21 20:49:57.9658|INFO|Sigmund|AbortDoneEventCalled|line 135: Abort Done!
+2023-05-21 20:49:58.0106|INFO|Sigmund|CloseNetworkSoft|line 191: Soft Close network was called
+2023-05-21 20:49:58.0150|INFO|Sigmund|CloseNetworkSoft|line 195: Sending close message to plugin SheldonVisionUiPlugin
+2023-05-21 20:49:58.0150|INFO|Sigmund|CloseNetworkSoft|line 195: Sending close message to plugin AzureBlobPlugin
+2023-05-21 20:49:58.0150|INFO|Sigmund|CloseNetworkSoft|line 195: Sending close message to plugin CameraPlugin
+2023-05-21 20:49:58.0150|INFO|Sigmund|CloseNetworkHard|line 218: Hard Close network was called
+2023-05-21 20:49:58.0150|INFO|Sigmund|StopPluginNotifyClose|line 191: Sending closing message
+2023-05-21 20:49:58.7599|INFO|Sigmund|Start|line 120: Plugin Sigmund stopped
+2023-05-21 20:49:58.7779|INFO|About to close Sigmund network
+2023-05-21 20:49:58.7779|INFO|Sigmund|Stop|line 142: Starting Stop
+2023-05-21 20:49:58.7801|INFO|Sigmund|AbortProcess|line 86: AbortProcess called
+2023-05-21 20:49:58.7801|INFO|Sigmund|AbortDoneEventCalled|line 135: Abort Done!
+2023-05-21 20:49:58.7801|INFO|Sigmund|StopPluginNotifyClose|line 191: Sending closing message
+2023-05-21 20:49:58.7801|INFO|Sigmund core closed

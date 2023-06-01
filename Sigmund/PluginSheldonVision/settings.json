@@ -1,0 +1,52 @@
+{
+  "General":
+  {
+    "PRIMARY_META_DATA_PATH": "results/b54161a7-64e9-4f28-b9dd-79c365df7729",
+    "PRIMARY_METADATA_LOG_NAME": "presence_log.json",
+
+    "SECONDARY_META_DATA_PATH": "annotations/GT_logs/Latest/",
+    "SECONDARY_METADATA_LOG_NAME": "GT",
+
+    "BASE_PATH_VIDEO": "C:/results"
+  
+  },
+  "Metadata":
+  {
+    "IS_CHECKED_ID": "IsChecked",
+    "COLUMN_ID": "column_id",
+    "ROW": "row",
+    "FRAME_ID": "frame_id",
+    "KEYS": "keys",
+    "VIDEO_LOCATION": "Video Location",
+    "FRAME_NUMBER": "Frame Number",
+    "END_FRAME": "end_frame",
+    "TYPE": "type",
+    "MESSAGE": "message",
+    "DEBUG": "debug",
+    "HEADER": "header",
+    "PRIMARY_METADATA": "primary_metadata",
+    "SECONDARY_METADATA": "secondary_metadata",
+    "PRIMARY_METADATA_TITLE": "Primary MetaData",
+    "SECONDARY_METADATA_TITLE": "Secondary MetaData",
+    "PRIMARY_REPORT": "primary_report",
+    "SECONDARY_REPORT": "secondary_report",
+    "LOGS_PATH": "logs_path",
+    "LOG_FILE_NAME": "log_file_name",
+    "PRIMARY_LOG_PATH": "primary_log_path",
+    "SECONDARY_LOG_PATH": "secondary_log_path",
+    "VIDEO_LOCATION_SECTION": "video_location",
+    "VIDEO_PATH": "video_path",
+    "VIDEO_SUFFIX": "video_suffix"
+  },
+  "PlotLayer": {
+    "LEFT": "Left",
+    "HEIGHT": "Height",
+    "WIDTH": "Width",
+    "TOP": "Top",
+    "BOUNDING_BOX": "BoundingBox",
+    "SOURCE": "Source",
+    "MESSAGE": "message",
+    "OBJECTS": "objects",
+    "KEYS": "keys"
+  }
+}
