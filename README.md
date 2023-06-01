@@ -79,17 +79,17 @@ git clone https://github.com/t-benazran/SheldonVision.git
 #### Bounding Box Metadata
 Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and load the ``` presence_log.json ```
 
-#### Play
+1. Play
 
-#### Rewind
+2. Rewind
 
-#### Decimation
+3. Decimation - 
 Explanation Needed
 
-#### Jump File
+4. Jump File - 
 Explanation Needed
 
-#### Frame Features
+5. Frame Features - 
 Explanation Needed - Zoom In/Out, Capture, x,y,color of current pixel
 
 
