@@ -21,11 +21,11 @@
       </ul>
     </li>
     <li>
-      <a href="#high-level-requirements">High Level Requirements</a>
+      <a href="#sw-diagram">Software Diagram</a>
       <ul>
         <li><a href="#sheldonvisionui">Sheldon Vision UI</a></li>
         <li><a href="#camera-listener-plugin">Camera Listener Plugin</a></li>
-        <li><a href="#features">Features</a></li>
+        <li><a href="#tests">Tests</a></li>
       </ul>
     </li>
     <li><a href="#The-Client-Side">The Client Side</a></li>
