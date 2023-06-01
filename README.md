@@ -1,10 +1,37 @@
 # SheldonVision
+
 The SheldonVision project was developed in response to the needs of the Data Science team at my workplace, who required a user-friendly debugging tool for their algorithms. Its primary objective is to facilitate frame navigation, enhance algorithm accuracy through the analysis of specific frames, and incorporate additional layers of metadata. The intended beneficiaries of this project are data scientists, who can leverage its capabilities to improve their work.
 
 ![image](https://github.com/t-benazran/SheldonVision/assets/112501531/acd40c1a-3dfa-442a-8806-4b88f496daa3)
 
 ## Project Scope
+
 The project scope entails the development of a user-friendly web UI interface, specifically designed for data scientists to effortlessly load their videos and facilitate easy debugging. The backend functionality will be responsible for retrieving the requested frames and addressing user queries, but this process will remain transparent to the user. Key features of the interface include the ability to navigate to the next or previous frames, implement decimation techniques, switch between video files, and incorporate additional functionalities as needed. The primary goal is to provide data scientists with a seamless and efficient platform for video analysis and algorithm debugging.
+
+
+### Prerequisites
+
+* Python 3.10.6
+* .NET (6.0+ is preferable)
+
+### Dependencies
+
+* SheldonDependencies folder which is part of this repository
+
+### Installing
+1. Install ``` Python 3.10.6 ``` 
+
+  ![image](https://github.com/t-benazran/SheldonVision/assets/112501531/150aa904-0a21-4bb3-843c-b89c9d2de3e3)
+
+2. Download the zip for this repository or use git on the termianl. The terminal command is:
+```
+git clone https://github.com/t-benazran/SheldonVision.git
+```
+
+3. Move the ``` Sigmund ``` folder to ``` C:\Tools\ ```
+4. Change directory to ``` SheldonDependencies ``` folder in this repository
+5. Open Terminal and run ``` pip install -r requirements.txt ```
+6. Change directory to ``` C:\Git\SheldonVision\Sigmund\PluginSheldonVision\Networks ``` and run ``` RunSheldonVisionUiNetwork.bat ```
 
 ## High Level Requirements
 ### SheldonVisionUI
