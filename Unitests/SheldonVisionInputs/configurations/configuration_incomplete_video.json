@@ -1,0 +1,11 @@
+{
+    "DebugMultiVideosFile": "C:\\Users\\v-bastei\\Downloads\\real_data\\MultipleVideosDebug.json",
+    "Primary": {
+        "Metadata": "C:\\Users\\v-bastei\\Downloads\\real_data\\presence_log.json",
+        "Layers": ["BoundingBoxLayer"]
+    },
+	"Secondary": {
+        "Metadata": "C:\\Users\\v-bastei\\Downloads\\real_data\\presence_log_secondary.json",
+        "Layers": ["BoundingBoxLayer"]
+    }
+}
