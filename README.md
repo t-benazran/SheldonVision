@@ -60,7 +60,7 @@ git clone https://github.com/t-benazran/SheldonVision.git
 6. Change directory to ``` C:\Tools\Sigmund\PluginSheldonVision\Networks ``` and run ``` RunSheldonVisionUiNetwork.bat ```
 7. Copy the ``` results/Experiments/WOALOLTestSetP0 ``` folder to ``` C:\ ```
 
-### How To Use
+## How To Use
 ## Load Local Files
 1. Click the ``` Video ``` button and load the sample video from ``` C:\results\Experiments\WOALOLTestSetP0 ```
 2. Click the ``` Play ``` button
