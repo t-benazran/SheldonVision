@@ -21,7 +21,7 @@
       </ul>
     </li>
     <li>
-      <a href="#high-level-requirements">High Level Requirementsm</a>
+      <a href="#high-level-requirements">High Level Requirements</a>
       <ul>
         <li><a href="#sheldonvisionui">Sheldon Vision UI</a></li>
         <li><a href="#camera-listener-plugin">Camera Listener Plugin</a></li>
