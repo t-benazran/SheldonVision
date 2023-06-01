@@ -1,0 +1,13 @@
+2023-05-21 20:59:03,866|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: SheldonVisionUiPlugin
+2023-05-21 20:59:03,866|DEBUG|SheldonVisionUiPlugin: Starting registration attempt 1/6
+2023-05-21 20:59:03,871|DEBUG|SheldonVisionUiPlugin: RegisterAck message received: #Control#.RegistryAck(SheldonVisionUiPlugin)
+2023-05-21 20:59:03,897|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: CameraFrame
+2023-05-21 20:59:03,898|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: TotalVideoFrames
+2023-05-21 20:59:03,899|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: PathStatus
+2023-05-21 20:59:03,899|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: FpsStatus
+2023-05-21 20:59:03,901|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: FinishedUploadBlob
+2023-05-21 20:59:03,901|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: FinishedDownloadBlob
+2023-05-21 20:59:03,901|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: AzureUploadCommand
+2023-05-21 20:59:03,901|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: AzureDownloadCommand
+2023-05-21 20:59:03,903|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: FilesListInBlobResponse
+2023-05-21 20:59:03,903|DEBUG|SheldonVisionUiPlugin: SetSubscribers completed

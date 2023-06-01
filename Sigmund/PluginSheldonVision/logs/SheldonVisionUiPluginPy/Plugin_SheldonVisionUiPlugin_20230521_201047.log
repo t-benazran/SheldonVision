@@ -1,0 +1,14 @@
+2023-05-21 20:10:48,530|DEBUG|SheldonVisionUiPlugin: plugin subscribed to type: SheldonVisionUiPlugin
+2023-05-21 20:10:48,531|DEBUG|SheldonVisionUiPlugin: Starting registration attempt 1/6
+2023-05-21 20:10:49,550|DEBUG|SheldonVisionUiPlugin: No registration message received at define time - 1 seconds
+2023-05-21 20:10:49,551|DEBUG|SheldonVisionUiPlugin: Starting registration attempt 2/6
+2023-05-21 20:10:50,559|DEBUG|SheldonVisionUiPlugin: No registration message received at define time - 1 seconds
+2023-05-21 20:10:50,562|DEBUG|SheldonVisionUiPlugin: Starting registration attempt 3/6
+2023-05-21 20:10:51,569|DEBUG|SheldonVisionUiPlugin: No registration message received at define time - 1 seconds
+2023-05-21 20:10:51,570|DEBUG|SheldonVisionUiPlugin: Starting registration attempt 4/6
+2023-05-21 20:10:52,586|DEBUG|SheldonVisionUiPlugin: No registration message received at define time - 1 seconds
+2023-05-21 20:10:52,586|DEBUG|SheldonVisionUiPlugin: Starting registration attempt 5/6
+2023-05-21 20:10:53,606|DEBUG|SheldonVisionUiPlugin: No registration message received at define time - 1 seconds
+2023-05-21 20:10:53,606|DEBUG|SheldonVisionUiPlugin: Starting registration attempt 6/6
+2023-05-21 20:10:54,612|DEBUG|SheldonVisionUiPlugin: No registration message received at define time - 1 seconds
+2023-05-21 20:10:54,612|CRITICAL|SheldonVisionUiPlugin: Exception thrown: Registration Ack message not received - make sure Sigmund Core is running before running plugin

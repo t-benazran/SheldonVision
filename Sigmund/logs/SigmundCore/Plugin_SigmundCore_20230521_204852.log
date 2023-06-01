@@ -1,0 +1,9 @@
+2023-05-21 20:48:52.0565|INFO|Sigmund|SetLoggerAsync|line 886: Starting Sigmund 1.786.137.0
+2023-05-21 20:48:52.0990|INFO|Starting Sigmund proxy, IP: 10.60.248.195
+2023-05-21 20:48:52.2820|INFO|Sigmund|LogAllUserOptions|line 1126: Plugin Sigmund 1.786.137.0 options: RegistrationRetries: 0, PubPort: 5678, KeepAlivePort: 2468, PluginsToCloseAfter: , InputTypes: , SubPort: 1234, DisableTelemetry: False, RegistrationAckTimeout: 0, OutputTypes: , Master: False, PluginName: Sigmund, MasterNumOfFramesToReq: 0
+2023-05-21 20:48:52.3699|FATAL|Sigmund|Start|line 127: Exception thrown: One or more errors occurred. (Could not load file or assembly 'ProcLauncherInfra, Version=1.94.137.0, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) StackTrace: 
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at Sigmund.CoreInfra.SigmundCore.OnInit() in C:\a\2\s\Sigmund.CoreInfra\SigmundCore.cs:line 118
+   at Sigmund.CommonNetStandard.PluginBase.Init() in C:\a\2\s\Sigmund.CommonNetStandard\PluginBase.cs:line 308
+   at Sigmund.CommonNetStandard.PluginBase.Start() in C:\a\2\s\Sigmund.CommonNetStandard\PluginBase.cs:line 108
