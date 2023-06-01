@@ -126,7 +126,6 @@ We will use Sigmund in order to create a Network that contains CameraListenerPlu
 
 Each Sigmund Plugin as independent component communicate with each other on top of network connection. The Plugins sending and listening to specific messages types without the need to know which component is registered to network. The only information that a Plugin needs to know is the IP address of Sigmund Core.
 
-![image](https://github.com/t-benazran/SheldonVision/assets/72923818/4f8e84e3-50d4-44c7-bee6-d8482bff2edf)
 ![](https://github.com/t-benazran/SheldonVision/assets/72923818/4f8e84e3-50d4-44c7-bee6-d8482bff2edf)
 *Sigmund network example:
 Plugin A sends 'a' messages and doesn’t subscribe to any message.
