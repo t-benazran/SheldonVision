@@ -1,2 +1,13 @@
 # SheldonVision
-The SheldonVision project was developed in response to the needs of the Data Science team at my workplace, who required a user-friendly debugging tool for their algorithms.
+The SheldonVision project was developed in response to the needs of the Data Science team at my workplace, who required a user-friendly debugging tool for their algorithms. Its primary objective is to facilitate frame navigation, enhance algorithm accuracy through the analysis of specific frames, and incorporate additional layers of metadata. The intended beneficiaries of this project are data scientists, who can leverage its capabilities to improve their work.
+
+![image](https://github.com/t-benazran/SheldonVision/assets/112501531/acd40c1a-3dfa-442a-8806-4b88f496daa3)
+
+## Project Scope
+The project scope entails the development of a user-friendly web UI interface, specifically designed for data scientists to effortlessly load their videos and facilitate easy debugging. The backend functionality will be responsible for retrieving the requested frames and addressing user queries, but this process will remain transparent to the user. Key features of the interface include the ability to navigate to the next or previous frames, implement decimation techniques, switch between video files, and incorporate additional functionalities as needed. The primary goal is to provide data scientists with a seamless and efficient platform for video analysis and algorithm debugging.
+
+## High Level Requirements
+SheldonVisionUI - SheldonVisionUI serves as the web-based user interface for our tool, offering a comprehensive platform for data scientists to load videos, setting files, and metadata in order to facilitate algorithm debugging. Its feature set encompasses various functionalities such as play/pause buttons, frame skipping (both forwards and backwards), decimation options, and the ability to jump to specific frames of interest. Additionally, users can leverage zoom in/out capabilities and access other relevant features. This UI empowers data scientists with an intuitive and powerful interface to effectively analyze and debug their algorithms.
+
+Camera Listener Plugin - The Camera Listener Plugin is a C# backend plugin designed to facilitate the playback of widely used video formats, such as .mp4 files. It leverages the capabilities of OpenCV for efficient handling of video frames. The plugin includes a range of essential features for video playback, including functions such as VideoPlayerPlay, VideoPlayerStop, VideoPlayerNextFrame, VideoPlayerPreviousFrame, VideoPlayerPause, and VideoPlayerSetFrame. These functionalities allow seamless control over the video playback, enabling users to play, stop, navigate to the next or previous frame, pause the video, and set a specific frame for analysis. The Camera Listener Plugin thus serves as a robust backend component, enhancing the video playback capabilities within the tool.
+
