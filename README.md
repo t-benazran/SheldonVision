@@ -2,7 +2,9 @@
 
 The SheldonVision project was developed in response to the needs of the Data Science team at my workplace, who required a user-friendly debugging tool for their algorithms. Its primary objective is to facilitate frame navigation, enhance algorithm accuracy through the analysis of specific frames, and incorporate additional layers of metadata. The intended beneficiaries of this project are data scientists, who can leverage its capabilities to improve their work.
 
-![image](https://github.com/t-benazran/SheldonVision/assets/112501531/acd40c1a-3dfa-442a-8806-4b88f496daa3)
+![image](https://github.com/t-benazran/SheldonVision/assets/72923818/0167b3b4-2b8b-434d-9e9a-97d0e5b20764)
+
+
 
 ## Project Scope
 
