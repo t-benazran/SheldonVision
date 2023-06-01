@@ -95,8 +95,7 @@ Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and loa
 4. Jump File
 
 
-5. Frame Features - 
-Explanation Needed - Zoom In/Out, Capture, x,y,color of current pixel
+5. Frame Features - Zoom In/Out, Capture, x,y,color of current pixel
 
 ![image](https://github.com/t-benazran/SheldonVision/assets/72923818/99aee3d0-9ae2-435c-a1f9-271f9a170372)
 
