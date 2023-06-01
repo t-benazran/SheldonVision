@@ -9,7 +9,7 @@
       <a href="#project-scope">Project Scope</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#dependencies">Dependencies</a></li>
       </ul>
     </li>
     <li><a href="#Features-And-Functionality">Features And Functionality</a></li>
