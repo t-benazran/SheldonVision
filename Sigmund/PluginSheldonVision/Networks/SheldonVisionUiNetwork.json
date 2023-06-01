@@ -2,7 +2,7 @@
   "Aliases": {
     "SIGMUND_FOLDER": ".",
     "SHELDON_VISION_PATH": "PluginSheldonVision",
-    "PYTHON": "C:\\Tools\\SheldonVisionVenv\\Scripts\\python.exe",
+    "PYTHON": "python",
     "VISIBLE": "false",
     "STORAGEACCOUNTNAME": "presencecv0851576016",
     "CONTAINERNAME": "dev-data",
