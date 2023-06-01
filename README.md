@@ -21,14 +21,14 @@
       </ul>
     </li>
     <li>
-      <a href="#sw-diagram">Software Diagram</a>
+      <a href="#high-level-requirements">High Level Requirementsm</a>
       <ul>
         <li><a href="#sheldonvisionui">Sheldon Vision UI</a></li>
         <li><a href="#camera-listener-plugin">Camera Listener Plugin</a></li>
         <li><a href="#tests">Tests</a></li>
       </ul>
     </li>
-    <li><a href="#The-Client-Side">The Client Side</a></li>
+    <li><a href="#sw-diagram">Software Diagram</a></li>
     <li><a href="#The-Algorithm-Server">The Algorithm Server</a></li>
     <li><a href="#UML">UML</a></li>
     <li><a href="#User-Stories-Video">User Stories Video</a></li>
