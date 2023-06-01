@@ -113,7 +113,7 @@ The tests for the project are categorized into two main types: manual tests and 
 On the other hand, the unit tests are specifically designed to cover the functionality of certain UI behaviors. These tests focus on testing individual units or components of the code to ensure their correctness and proper integration with the overall system. The unit tests will encompass scenarios that exercise specific UI behaviors and verify their expected outcomes.
 By combining manual tests for UI validation and unit tests for specific UI behaviors, a comprehensive testing approach is employed to ensure the quality and reliability of the project.
 
-## SW Diagram
+## SoftWare Diagram
 ![image](https://github.com/t-benazran/SheldonVision/assets/72923818/d1ee98dd-e619-4347-96ba-a9a533f5aacf)
 
 ![image](https://github.com/t-benazran/SheldonVision/assets/72923818/1dd68b02-acef-4a8c-b254-8d845dccc208)
