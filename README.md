@@ -8,6 +8,9 @@
     <li>
       <a href="#project-scope">Project Scope</a>
     </li>
+    <li>
+      <a href="#prerequisites">Prerequisites</a>
+    </li>
     <li><a href="#Features-And-Functionality">Features And Functionality</a></li>
     <li><a href="#The-API">The API</a></li>
     <li><a href="#The-Client-Side">The Client Side</a></li>
