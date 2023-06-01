@@ -1,3 +1,30 @@
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#Features-And-Functionality">Features And Functionality</a></li>
+    <li><a href="#The-API">The API</a></li>
+    <li><a href="#The-Client-Side">The Client Side</a></li>
+    <li><a href="#The-Algorithm-Server">The Algorithm Server</a></li>
+    <li><a href="#UML">UML</a></li>
+    <li><a href="#User-Stories-Video">User Stories Video</a></li>
+  </ol>
+</details>
+
+
 # SheldonVision
 
 The SheldonVision project was developed in response to the needs of the Data Science team at my workplace, who required a user-friendly debugging tool for their algorithms. Its primary objective is to facilitate frame navigation, enhance algorithm accuracy through the analysis of specific frames, and incorporate additional layers of metadata. The intended beneficiaries of this project are data scientists, who can leverage its capabilities to improve their work.
