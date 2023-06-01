@@ -32,6 +32,7 @@ git clone https://github.com/t-benazran/SheldonVision.git
 4. Open Terminal or CMD and change directory to ``` SheldonDependencies ``` folder in this repository
 5. run ``` pip install -r requirements.txt ```
 6. Change directory to ``` C:\Tools\Sigmund\PluginSheldonVision\Networks ``` and run ``` RunSheldonVisionUiNetwork.bat ```
+7. Copy the ``` results/Experiments/WOALOLTestSetP0 ``` folder to ``` C:\ ```
 
 ## High Level Requirements
 ### SheldonVisionUI
