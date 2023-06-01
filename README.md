@@ -77,9 +77,9 @@ On the other hand, the unit tests are specifically designed to cover the functio
 By combining manual tests for UI validation and unit tests for specific UI behaviors, a comprehensive testing approach is employed to ensure the quality and reliability of the project.
 
 ## SW Diagram
-![image](https://github.com/t-benazran/SheldonVision/assets/112501531/2bd920c5-d1e0-47ec-be8b-7065b91c0299)
+![image](https://github.com/t-benazran/SheldonVision/assets/72923818/d1ee98dd-e619-4347-96ba-a9a533f5aacf)
 
-![image](https://github.com/t-benazran/SheldonVision/assets/112501531/1bbc4dcb-069e-493a-b9ae-81e42a13d627)
+![image](https://github.com/t-benazran/SheldonVision/assets/72923818/1dd68b02-acef-4a8c-b254-8d845dccc208)
 
 ## Sigmund
 Flexible and scalable development environment that can be used for a wide range of applications. Sigmund is a distributed system built in micro-service architecture, using various plugins that are used to achieve different goals. Set of plugins are commonly called Network.
@@ -89,7 +89,7 @@ We will use Sigmund in order to create a Network that contains CameraListenerPlu
 
 Each Sigmund Plugin as independent component communicate with each other on top of network connection. The Plugins sending and listening to specific messages types without the need to know which component is registered to network. The only information that a Plugin needs to know is the IP address of Sigmund Core.
 
-![image](https://github.com/t-benazran/SheldonVision/assets/112501531/5d9adaa9-5f6e-487d-b3fc-2147c76a038e) 
+![image](https://github.com/t-benazran/SheldonVision/assets/72923818/4f8e84e3-50d4-44c7-bee6-d8482bff2edf)
 
 Sigmund network example:
 Plugin A sends 'a' messages and doesn’t subscribe to any message.
