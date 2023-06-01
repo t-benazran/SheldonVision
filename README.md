@@ -5,9 +5,9 @@
     <li>
       <a href="#SheldonVision">SheldonVision</a>
     </li>
-    <li>
+    
       <a href="#project-scope">Project Scope</a>
-    </li>
+    
     
     
  
