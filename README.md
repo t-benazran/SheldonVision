@@ -61,11 +61,11 @@ git clone https://github.com/t-benazran/SheldonVision.git
 7. Copy the ``` results/Experiments/WOALOLTestSetP0 ``` folder to ``` C:\ ```
 
 ## How To Use
-## Load Local Files
+### Load Local Files
 1. Click the ``` Video ``` button and load the sample video from ``` C:\results\Experiments\WOALOLTestSetP0 ```
 2. Click the ``` Play ``` button
 
-## Load From Cloud
+### Load From Cloud
 1. Click the ``` Jump File ``` button and load the ``` All-unique-FN-unique.json ``` from ``` SheldonVisionExampleFiles ``` folder in this repository
 2. Scroll down the page and choose the desired video to load
 
