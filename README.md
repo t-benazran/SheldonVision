@@ -29,8 +29,8 @@ git clone https://github.com/t-benazran/SheldonVision.git
 ```
 
 3. Move the ``` Sigmund ``` folder to ``` C:\Tools\ ```
-4. Change directory to ``` SheldonDependencies ``` folder in this repository
-5. Open Terminal and run ``` pip install -r requirements.txt ```
+4. Open Terminal or CMD and change directory to ``` SheldonDependencies ``` folder in this repository
+5. run ``` pip install -r requirements.txt ```
 6. Change directory to ``` C:\Git\SheldonVision\Sigmund\PluginSheldonVision\Networks ``` and run ``` RunSheldonVisionUiNetwork.bat ```
 
 ## High Level Requirements
