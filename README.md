@@ -128,8 +128,8 @@ Each Sigmund Plugin as independent component communicate with each other on top 
 
 ![image](https://github.com/t-benazran/SheldonVision/assets/72923818/4f8e84e3-50d4-44c7-bee6-d8482bff2edf)
 ![](path_to_image)
-*
-Sigmund network example:
+
+*Sigmund network example:
 Plugin A sends 'a' messages and doesn’t subscribe to any message.
 Plugin B sends 'b' and 'x' messages and subscribes to 'a' messages.
 Plugin C sends 'c' messages and subscribed to 'a' and 'b' messages.*
