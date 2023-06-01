@@ -34,6 +34,11 @@ git clone https://github.com/t-benazran/SheldonVision.git
 6. Change directory to ``` C:\Tools\Sigmund\PluginSheldonVision\Networks ``` and run ``` RunSheldonVisionUiNetwork.bat ```
 7. Copy the ``` results/Experiments/WOALOLTestSetP0 ``` folder to ``` C:\ ```
 
+### How To Use
+1. Click the ``` Video ``` button and load the sample video from ``` C:\results/Experiments/WOALOLTestSetP0 ```
+2. Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and load the ``` presence_log.json ```
+3. Click the ``` Play ``` button
+
 ## High Level Requirements
 ### SheldonVisionUI
 SheldonVisionUI serves as the web-based user interface for our tool, offering a comprehensive platform for data scientists to load videos, setting files, and metadata in order to facilitate algorithm debugging. Its feature set encompasses various functionalities such as play/pause buttons, frame skipping (both forwards and backwards), decimation options, and the ability to jump to specific frames of interest. Additionally, users can leverage zoom in/out capabilities and access other relevant features. This UI empowers data scientists with an intuitive and powerful interface to effectively analyze and debug their algorithms.
