@@ -4,12 +4,9 @@
   <ol>
     <li>
       <a href="#SheldonVision">SheldonVision</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="### Prerequisites">Prerequisites</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
