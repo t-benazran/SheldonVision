@@ -85,7 +85,7 @@ git clone https://github.com/t-benazran/SheldonVision.git
 #### Bounding Box Metadata
 Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and load the ``` presence_log.json ```
 
-Play: The "Play" button is a standard feature found in most video players. When pressed, it starts the playback of the video, allowing you to watch it from the current position to the end.
+#####Play: The "Play" button is a standard feature found in most video players. When pressed, it starts the playback of the video, allowing you to watch it from the current position to the end.
 
 Rewind: The "Rewind" button allows you to quickly move backward in the video. When pressed, it rewinds the playback to a previous point, allowing you to review or revisit specific parts of the video.
 
