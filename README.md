@@ -85,17 +85,6 @@ git clone https://github.com/t-benazran/SheldonVision.git
 #### Bounding Box Metadata
 Click the ``` MeataData Primary ``` or ``` Metadata Seconadry ``` button and load the ``` presence_log.json ```
 
-1. Play - 
-
-2. Rewind - 
-
-3. Decimation - This button ensures that the flow of the video would be dictated by the applied layers instead of just passing frame by frame.
-
-
-4. Jump File
-
-
-5. Frame Features - Zoom In/Out, Capture, x,y,color of current pixel
 Play: The "Play" button is a standard feature found in most video players. When pressed, it starts the playback of the video, allowing you to watch it from the current position to the end.
 
 Rewind: The "Rewind" button allows you to quickly move backward in the video. When pressed, it rewinds the playback to a previous point, allowing you to review or revisit specific parts of the video.
@@ -104,11 +93,11 @@ Decimation: The "Decimation" button introduces a unique functionality to the vid
 
 Jump File: The "Jump File" button provides a convenient way to skip to a different part within the video player. When clicking this button a file browser opens enabling the user to choose the needed jump file.
 
-Frame Features: This set of features enhances your ability to interact with individual frames of the video:
+Frame Features: 
 
 Zoom In/Out: This feature allows you to magnify or reduce the display size of the current frame. It enables you to focus on specific details or get an overview of the entire frame. 
 
-Frame features (x,y,color of current pixel) -  These frame features provide information about the current pixel under the cursor. They display the coordinates (x, y) of the pixel and its corresponding color value, which can be useful for analysis, editing, or extracting specific color data from the video frame.
+Frame features: This set of features enhances your ability to interact with individual frames of the video, they provide information about the current pixel under the cursor by displaying the coordinates (x, y) of the pixel and its corresponding color value, which can be useful for analysis, editing, or extracting specific color data from the video frame.
 
 
 ![image](https://github.com/t-benazran/SheldonVision/assets/72923818/99aee3d0-9ae2-435c-a1f9-271f9a170372)
