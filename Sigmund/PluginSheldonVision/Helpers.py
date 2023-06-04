@@ -1,3 +1,4 @@
+import logging
 import dash
 from PluginSheldonVision.Constants import OutputCallbacksIdx
 
@@ -199,3 +200,20 @@ def get_index_from_list_by_condition(condition, indices_list: list, is_reversed:
         return next((value for value in indices_list if condition(value)), -1)
     else:
         return next((indices_list[i] for i in range(len(indices_list) - 1, -1, -1) if condition(indices_list[i])), -1)
+
+
+def init_logger_settings(log_file_path, logger: logging):
+    """
+        Init logger to print log to specific log file and also to console
+        @param log_file_path: Log file path
+        @param logger: logging object from the calling class
+    """
+    logger.basicConfig(filename=log_file_path,
+                        filemode='a',
+                        format='%(asctime)s,%(msecs)d|%(levelname)s| %(name)s: %(message)s',
+                        datefmt='%Y-%d-%m %H:%M:%S')
+    console = logging.StreamHandler()
+    console_formatter = logging.Formatter("%(levelname)s:%(module)s:%(message)s")
+    console.setLevel(logging.DEBUG)
+    console.setFormatter(console_formatter)
+    logger.getLogger('').addHandler(console)

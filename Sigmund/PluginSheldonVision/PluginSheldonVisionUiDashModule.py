@@ -1,4 +1,5 @@
 import base64
+import glob
 import io
 import logging
 import time
@@ -26,10 +27,7 @@ from PluginSheldonVision.Exceptions import FrameRangeNotValid
 import PluginSheldonVision.Constants as SheldonVisionConstants
 from PluginSheldonVision.PlotLayers.BoundingBoxLayer import BoundingBoxLayer, BOUNDING_BOX_LAYER_NAME
 from PluginSheldonVision.PlotLayers.GTLogLayer import GTLogLayer, GT_LOG_LAYER_NAME
-
 from PluginSheldonVision.PlotLayers.BoundingBoxLayerForMF import BoundingBoxLayerForMF, BOUNDING_BOX_LAYER_FOR_MF_NAME
-from PluginSheldonVision.PlotLayers.TestTextLayer import TestTextLayer, TEST_TEXT_LAYER_NAME
-from PluginSheldonVision.PlotLayers.TestLayer import TestLayer, TEST_LAYER_NAME
 from PluginSheldonVision.PlotLayers.Elements import GUIRect
 from PluginSheldonVision.MetaDataHandler import MetaDataHandler, MetaDataType, is_checked_modify_value, IS_CHECKED_ID, COLUMN_ID, ROW, \
     VIDEO_LOCATION
@@ -43,7 +41,7 @@ from PluginSheldonVision.ConfigurationHandler import ConfigurationHandler
 from SigmundProtobufPy.CloseType_pb2 import SigmundCloseTypeProto
 from PluginSheldonVision.ClickHandler import ClickHandler
 from PluginSheldonVision.MailHandler import MailHandler
-from PluginSheldonVision.NotificationsHandler import Notification
+from PluginSheldonVision.NotificationsHandler import Notification, NotificationTypes
 
 setting_file_name = os.path.abspath(os.path.join(__file__, '..', 'settings.json'))
 settings = ConfigurationHandler(setting_file_name,perform_validation=False)
@@ -117,9 +115,15 @@ class MainSheldonVisionUI:
         self.speed = 1
         self.frames_range = [0, 0]
         self.notifications: Notification = Notification()
-        self.configurations = ConfigurationHandler(configuration_file_path=configurations, notifications=self.notifications)
-        self.meta_data_handler = MetaDataHandler(verify_blob_path, get_files_list_on_blob, files_list_on_blob, verify_local_path,
-                                                 self.download_file_from_blob, notifications=self.notifications)
+        self.sheldon_ui_logs_path = self.__get_recent_log_file_path(SheldonVisionConstants.PLUGIN_LOG_PATH)
+        if self.sheldon_ui_logs_path:
+            sheldon_helpers.init_logger_settings(self.sheldon_ui_logs_path, logging)
+        self.configurations = ConfigurationHandler(configuration_file_path=configurations,
+                                                   notifications=self.notifications,
+                                                   log_file_path=self.sheldon_ui_logs_path)
+        self.meta_data_handler = MetaDataHandler(verify_blob_path, get_files_list_on_blob, files_list_on_blob,
+                                                 verify_local_path, self.download_file_from_blob,
+                                                 notifications=self.notifications, log_file_path=self.sheldon_ui_logs_path)
         self.are_player_buttons_disabled = True
         self.__root_tk = None
         self.fig: Dict[MetaDataType, Image] = {MetaDataType.PRIMARY: None, MetaDataType.SECONDARY: None}
@@ -142,6 +146,7 @@ class MainSheldonVisionUI:
         self.jump_path_http = None
         self.waiting_jump_loading = AutoRunStatus.UNAVAILABLE
         self.is_on_dragging = False
+        self.error_notifications_dict: dict[int, Notification] = {}
 
         self.alternative_base_path_video = settings.get_item('BASE_PATH_VIDEO', 'General') #TODO: Take that from config file
         
@@ -484,7 +489,7 @@ class MainSheldonVisionUI:
                 ),
                 rc.input_modal(component_id=SheldonVisionConstants.INPUT_METADATA_MODAL, title="Metadata from Blob", label_text="Metadata Path:"),
                 rc.input_modal(component_id=SheldonVisionConstants.INPUT_VIDEO_MODAL, title="Video from Blob", label_text="Video Path:"),
-                html.Div(id="notifications-container"),
+                html.Div(id="notifications-container", children=[]),
                 html.Div(rc.Interval(component_id=SheldonVisionConstants.SLIDER_INTERVAL_ID, interval=100)),
                 html.Div(rc.Interval(component_id=SheldonVisionConstants.AUTORUN_FROM_MAIL_INTERVAL_ID, interval=5000, disabled=False)),
                 html.Div(rc.Interval(component_id=SheldonVisionConstants.JUMP_LOAD_INTERVAL_ID, interval=5000, disabled=False)),
@@ -983,16 +988,22 @@ class MainSheldonVisionUI:
                              Input(SheldonVisionConstants.INPUT_METADATA_MODAL_OK, 'n_clicks'),
                              Input(SheldonVisionConstants.INPUT_METADATA_MODAL_CANCEL, 'n_clicks')])(self.__handle_metadata_drop_down)
 
-        app.callback(output=Output("notifications-container", "children"),
-                     inputs=Input(SheldonVisionConstants.ALERTS_INTERVAL_ID, 'n_intervals'),
-                     prevent_initial_call=True)(self.__on_alerts_interval)
-
         app.callback(inputs=Input(CYCLE_RANGE_SLIDER_ID, 'drag_value'),
                      output=Output(CYCLE_RANGE_SLIDER_ID, 'hidden'))(self.__on_frame_drag_event)
                     
         app.callback(output=Output(SheldonVisionConstants.JUMP_LOADING_LABEL_ID, 'hidden'),
                      inputs=Input(SheldonVisionConstants.JUMP_LOAD_INTERVAL_ID, 'n_intervals'),
                      state=State(SheldonVisionConstants.JUMP_LOADING_LABEL_ID, 'hidden'))(self.__on_jump_load_interval)
+
+        app.callback(output=Output("notifications-container", "children"),
+                     inputs=Input(SheldonVisionConstants.ALERTS_INTERVAL_ID, 'n_intervals'),
+                     state=State("notifications-container", "children"),
+                     prevent_initial_call=True)(self.__on_alerts_interval)
+
+        app.callback(output=Output({'type': SheldonVisionConstants.LOG_FILE_LINK_INPUT, 'index': dash.MATCH}, 'hidden'),
+                     inputs=Input({'type': SheldonVisionConstants.LOG_FILE_LINK_INPUT, 'index': dash.ALL}, 'n_clicks'),
+                     state=State({'type': SheldonVisionConstants.LOG_FILE_LINK_INPUT, 'index': dash.MATCH}, 'id'),
+                     prevent_initial_call=True)(self.open_log_file_by_link_click)
                      
     def __on_jump_load_interval(self, jump_load_interval, label_status):
         if self.waiting_jump_loading == AutoRunStatus.WAITING or self.waiting_jump_loading == AutoRunStatus.LOADING:
@@ -1007,15 +1018,78 @@ class MainSheldonVisionUI:
         self.is_on_dragging = not (current_frame - 5 <= drag_value <= current_frame + 5) if current_frame else False
         return False
 
-    def __on_alerts_interval(self, alert_interval):
+    def __get_recent_log_file_path(self, log_path_folder):
+        """
+            Get the newest sheldon log file path
+            @param log_path_folder: Path to log folder
+        """
+        if os.path.exists(log_path_folder):
+            files = glob.glob(log_path_folder + '\\*.log')
+            if files:
+                fixed_path = os.path.abspath(max(files, key=os.path.getctime)).replace('\\', '/')
+                return fixed_path
+        return None
+
+    def open_log_file_by_link_click(self, link_clicked, notification_id):
+        """
+            Open file by link click
+            @param:link_clicked: Link click
+        """
+        notification_index = notification_id['index']
+        os.startfile(self.sheldon_ui_logs_path)
+        self.notifications.close_error(notification_index)
+        return True
+
+    def __on_alerts_interval(self, alert_interval, notifications: list):
         notification, notification_id = self.notifications.get_notification()
         if not notification:
             return dash.no_update
 
-        return rc.create_notification(component_id_number=notification_id, title=notification.title, message=notification.body,
-                                      time_to_display=notification.notification_type['autoClose'],
-                                      base_color=notification.notification_type['color'], style=notification.notification_type['style'],
-                                      icon=notification.notification_type['icon'])
+        new_notifications = []
+        # if clicked on error notification - it will update an existing one and not create a new
+        if notification_id in self.error_notifications_dict:
+            relevant_notification = self.error_notifications_dict.pop(notification_id)
+            notification = rc.create_notification(
+                is_closing_error=True,
+                component_id_number=notification_id,
+                title=relevant_notification.title,
+                message=relevant_notification.message,
+                time_to_display=notification.notification_type['autoClose'],
+                base_color=notification.notification_type['color'],
+                style=notification.notification_type['style'],
+                icon=notification.notification_type['icon'],
+            )
+            new_notifications.append(notification)
+        else:
+            notification_type = self.notifications.get_notification_type(notification)
+            # If notification type is Error - display link to log file
+            if notification_type == NotificationTypes.Error:
+                notification.body = html.Div([
+                    notification.body,
+                    html.A(' Click here for more info',
+                           href=f'file:///{self.sheldon_ui_logs_path}',
+                           id={'type': SheldonVisionConstants.LOG_FILE_LINK_INPUT,
+                               'index': notification_id})]
+                    )
+
+            notification = rc.create_notification(component_id_number=notification_id,
+                                                  title=notification.title,
+                                                  message=notification.body,
+                                                  time_to_display=notification.notification_type['autoClose'],
+                                                  base_color=notification.notification_type['color'],
+                                                  style=notification.notification_type['style'],
+                                                  icon=notification.notification_type['icon'])
+            if notification not in new_notifications:
+                new_notifications.append(notification)
+
+            if notification_type == NotificationTypes.Error and notification_id not in self.error_notifications_dict:
+                self.error_notifications_dict[notification_id] = notification
+
+        for k, error_notication in self.error_notifications_dict.items():  # Add all existing error notifications
+            if error_notication not in new_notifications:
+                new_notifications.append(error_notication)
+
+        return new_notifications
 
     def __handle_metadata_drop_down(self, primary_blob, secondary_blob, jump_blob, input_ok, input_cancel):
         triggered_callback = dash.callback_context.triggered[0][PROP_ID]

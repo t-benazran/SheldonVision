@@ -4,7 +4,6 @@ from dash import dash_table, dcc, html
 from pandas import DataFrame
 import dash_mantine_components as dmc
 from dash_iconify import DashIconify
-#import dash_daq.ToggleSwitch
 
 from SheldonCommon.Constants import TAB_ID_PREFIX, ALGO_TAB_DROP_DOWN
 from SheldonCommon.styles import Styles
@@ -418,7 +417,7 @@ def create_updating_data_table_by_callback(component_id, data_frame, is_export=T
 
 
 def create_notification(component_id_number: int, title: str, message: str, time_to_display: int | bool, base_color: str, style: str,
-                        icon: str) -> dmc.Notification:
+                        icon: str, is_closing_error: bool = False) -> dmc.Notification:
     """
     Creates user notification pop up
     :param component_id_number: id of the specific notification
@@ -428,17 +427,29 @@ def create_notification(component_id_number: int, title: str, message: str, time
     :param base_color: color of the icon and frame
     :param style: css style, used for background color
     :param icon: DashIconify color name
+    :param is_closing_error: determine if should update and close an existing error notification
     :return: dmc.Notification
     """
-    return dmc.Notification(
-                title=title,
-                id=f"simple-notify_{component_id_number}",
-                action="show",
-                message=message,
-                autoClose=time_to_display,
-                color=base_color,
-                style=style,
-                icon=DashIconify(icon=icon),)
+    if is_closing_error:
+        return dmc.Notification(
+            title=title,
+            id=f"simple-notify_{component_id_number}",
+            action="update",
+            message=message,
+            autoClose=10,
+            color=base_color,
+            style=style,
+            icon=DashIconify(icon=icon), )
+    else:
+        return dmc.Notification(
+                    title=title,
+                    id=f"simple-notify_{component_id_number}",
+                    action="show",
+                    message=message,
+                    autoClose=time_to_display,
+                    color=base_color,
+                    style=style,
+                    icon=DashIconify(icon=icon),)
 
 
 def generate_drop_down_options(options, first_option=None, is_sort=False):
