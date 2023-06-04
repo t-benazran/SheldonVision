@@ -3,15 +3,19 @@ import json
 import logging
 from typing import Union
 import PluginSheldonVision.Constants as SheldonVisionConstants
+from PluginSheldonVision.Helpers import init_logger_settings
 from PluginSheldonVision.NotificationsHandler import Notification
 
 
 class ConfigurationHandler:
-    def __init__(self, configuration_file_path: str, notifications: Notification = None, perform_validation: bool = True):
+    def __init__(self, configuration_file_path: str, notifications: Notification = None, perform_validation: bool = True,
+                 log_file_path: str = ""):
         self.perform_validation = perform_validation
         self.notifications = notifications
         self.__configuration_file_path = configuration_file_path
         self.__configurations = self.__read_configurations(configuration_file_path)
+        if log_file_path:
+            init_logger_settings(log_file_path, logging)
 
     @property
     def is_ok(self) -> bool:

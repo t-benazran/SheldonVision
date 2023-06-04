@@ -1,6 +1,7 @@
 import inspect
 from enum import Enum
 
+PLUGIN_LOG_PATH = f"logs\\SheldonVisionUiPluginPy"
 DECIMATION_COLOR_OFF = '#71042F'
 DECIMATION_COLOR_ON = '#046816'
 NO_FRAME_SELECTED = [0, 0]
@@ -268,7 +269,7 @@ INPUT_METADATA_MODAL_CANCEL = 'input-metadata-modal-cancel-button'
 INPUT_METADATA_MODAL_TYPE = 'input-metadata-modal-type'
 INPUT_METADATA_MODAL_HEADER = 'input-metadata-modal-header'
 INPUT_METADATA_MODAL_LABEL = 'input-metadata-modal-label'
-
+LOG_FILE_LINK_INPUT = 'input-log-file-link'
 INPUT_VIDEO_MODAL = 'input-video-modal'
 INPUT_VIDEO_MODAL_INPUT = 'input-video-modal-input'
 INPUT_VIDEO_MODAL_OK = 'input-video-modal-ok-button'

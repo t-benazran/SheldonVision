@@ -1,6 +1,5 @@
 import glob
 import os
-import re
 import time
 import traceback
 import pandas as pd
@@ -11,6 +10,7 @@ from enum import Enum
 from typing import TypedDict, Tuple
 from PluginSheldonVision import Helpers
 from SheldonCommon.Constants import EMPTY_STRING
+from PluginSheldonVision.Helpers import init_logger_settings
 from PluginSheldonVision.ConfigurationHandler import ConfigurationHandler
 from PluginSheldonVision.NotificationsHandler import Notification
 
@@ -111,7 +111,7 @@ class MetaDataStruct(TypedDict):
 
 class MetaDataHandler:
     def __init__(self, verify_blob_path, get_blob_files, files_list_on_blob, verify_local_path, download_file_from_blob,
-                 notifications: Notification):
+                 notifications: Notification, log_file_path: str = ""):
         self.__meta_data_list = []
         self.__metadata: dict[MetaDataType.value, MetaDataStruct] = {
             MetaDataType.PRIMARY.value: {METADATA: {}, HEADER: {}, FILENAME: None, DECIMATION: False},
@@ -130,6 +130,8 @@ class MetaDataHandler:
         self.download_file_from_blob = download_file_from_blob
         self.find_metadata_file = False
         self.notifications = notifications
+        if log_file_path:
+            init_logger_settings(log_file_path, logging)
 
     @property
     def has_header(self):
