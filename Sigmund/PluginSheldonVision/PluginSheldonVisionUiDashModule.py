@@ -2259,16 +2259,14 @@ class MainSheldonVisionUI:
 
             if self.is_decimated:
                 decimation_button_style['background-color'] = SheldonVisionConstants.DECIMATION_COLOR_ON
-                output_callbacks = sheldon_helpers.prepare_main_ui_output_callbacks(
-                    decimation_button_style=decimation_button_style,
-                    slider_fps_style=slider_style_off,
-                    slider_speed_style=slider_style_on)
-
             else:
                 decimation_button_style['background-color'] = SheldonVisionConstants.DECIMATION_COLOR_OFF
-                output_callbacks = sheldon_helpers.prepare_main_ui_output_callbacks(decimation_button_style=decimation_button_style,
-                                                                                    slider_fps_style=slider_style_on,
-                                                                                    slider_speed_style=slider_style_off)
+
+            output_callbacks = sheldon_helpers.prepare_main_ui_output_callbacks(
+                decimation_button_style=decimation_button_style,
+                slider_fps_style=slider_style_on,
+                slider_speed_style=slider_style_off)
+
         output_callbacks.extend(self.__get_graphs_div_display_status())
         return output_callbacks
 
