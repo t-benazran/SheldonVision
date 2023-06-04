@@ -120,6 +120,7 @@ By combining manual tests for UI validation and unit tests for specific UI behav
 ![image](https://github.com/t-benazran/SheldonVision/assets/72923818/1dd68b02-acef-4a8c-b254-8d845dccc208)
 
 ## Sigmund
+<b>External Library<b>
 Flexible and scalable development environment that can be used for a wide range of applications. Sigmund is a distributed system built in micro-service architecture, using various plugins that are used to achieve different goals. Set of plugins are commonly called Network.
 Plugin supported in C++, C# and Python. Using protocol buffer to build the data structures one time for all the languages. Leveraging ZeroMQ for communication layer.
 The development environment includes Plugin base to minimize developer overhead.
