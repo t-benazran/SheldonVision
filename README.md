@@ -93,8 +93,6 @@ Decimation: The "Decimation" button introduces a unique functionality to the vid
 
 Jump File: The "Jump File" button provides a convenient way to skip to a different part within the video player. When clicking this button a file browser opens enabling the user to choose the needed jump file.
 
-Frame Features: 
-
 Zoom In/Out: This feature allows you to magnify or reduce the display size of the current frame. It enables you to focus on specific details or get an overview of the entire frame. 
 
 Frame features: This set of features enhances your ability to interact with individual frames of the video, they provide information about the current pixel under the cursor by displaying the coordinates (x, y) of the pixel and its corresponding color value, which can be useful for analysis, editing, or extracting specific color data from the video frame.
