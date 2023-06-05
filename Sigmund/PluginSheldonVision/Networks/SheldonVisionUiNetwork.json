@@ -6,7 +6,7 @@
     "VISIBLE": "false",
     "STORAGEACCOUNTNAME": "presencecv0851576016",
     "CONTAINERNAME": "dev-data",
-    "SASTOKEN": "sp=racwdli&st=2023-05-10T09:01:07Z&se=2025-10-11T17:01:07Z&sv=2022-11-02&sr=c&sig=IImnSh3I8yKU%2Fu0Nr%2B3CUgEAafoDUy1MMbVQK9EtwKs%3D",
+    "SASTOKEN": "",
     "NUMOFUPLOADTASKS": "2",
     "NUMOFDOWNLOADTASKS": "2",
     "HEIGHT": "480",

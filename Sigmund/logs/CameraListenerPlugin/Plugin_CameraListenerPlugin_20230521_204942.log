@@ -1,4 +1,0 @@
-2023-05-21 20:49:42.5241|INFO|CameraPlugin|SetLoggerAsync|line 886: Starting CameraPlugin 1.786.137.0
-2023-05-21 20:49:42.6126|INFO|CameraPlugin|LogAllUserOptions|line 1126: Plugin CameraPlugin 1.786.137.0 options: PubPort: 5678, PauseMode: False, ResizeImage: True, SubPort: 1234, IsShowDebugWindow: False, InputTypes: , IsDisableAutoFocus: False, InputNameChange: , PluginsToCloseAfter: , RegistrationAckTimeout: 1, DisableTelemetry: False, Passthrough: , KeepAlivePort: 2468, OutputTypes: , RegistrationRetries: 6, MasterNumOfFramesToReq: 30, IpAddress: 127.0.0.1, OutputNameChange: , FrameWidth: 640, WaitingMode: True, Master: False, PluginName: CameraPlugin, FrameHeight: 480
-2023-05-21 20:49:42.6126|INFO|CameraPlugin|OnInit|line 120: Waiting for LoadRequest message
-2023-05-21 20:49:42.6126|INFO|CameraPlugin|Start|line 109: CameraPlugin init Done!
