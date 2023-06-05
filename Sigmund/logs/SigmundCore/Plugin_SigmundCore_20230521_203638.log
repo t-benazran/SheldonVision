@@ -1,7 +1,0 @@
-2023-05-21 20:36:38.6450|INFO|Sigmund|SetLoggerAsync|line 886: Starting Sigmund 
-2023-05-21 20:36:39.7086|INFO|Sigmund|BeforeInit|line 91: Going to check if firewall rules are valid
-2023-05-21 20:36:40.3002|INFO|Starting Sigmund proxy, IP: 10.60.248.195
-2023-05-21 20:36:40.7827|INFO|Sigmund|LogAllUserOptions|line 1126: Plugin Sigmund 1.786.137.0 options: RegistrationRetries: 0, PluginName: Sigmund, DisableTelemetry: False, SubPort: 1234, RegistrationAckTimeout: 0, MasterNumOfFramesToReq: 0, OutputTypes: , Master: False, InputTypes: , PluginsToCloseAfter: , PubPort: 5678, KeepAlivePort: 2468
-2023-05-21 20:36:46.6738|WARN|Sigmund|BeforeInit|line 95: Sigmund Core firewall role not set, plugin running on remote computers couldn't connect to core
-2023-05-21 20:36:46.6738|INFO|Sigmund|OnInit|line 119: Sigmund network initialize sequence begin
-2023-05-21 20:36:46.6738|INFO|Sigmund|Start|line 109: Sigmund init Done!
